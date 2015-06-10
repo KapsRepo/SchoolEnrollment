@@ -249,7 +249,7 @@
     <Content Include="Scripts\d3\LICENSE" />
     <Content Include="Data\SchoolEnrollment.csv" />
     <Content Include="Data\SchoolEnrollmentCut.csv" />
-    <Content Include="Data\data.csv" />
+    <Content Include="Data\SchoolEnrollmentTwo.csv" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
