@@ -14,6 +14,11 @@ namespace KDI.Controllers
             return View();
         }
 
+        public ActionResult Table()
+        {
+            return View();
+        }
+
         // GET: SchoolEnrollment/Details/5
         public ActionResult Details(int id)
         {

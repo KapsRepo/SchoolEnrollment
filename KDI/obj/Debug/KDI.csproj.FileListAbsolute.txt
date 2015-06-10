@@ -1,3 +1,5 @@
+G:\Project\KDI\KDI\obj\Debug\KDI.dll
+G:\Project\KDI\KDI\obj\Debug\KDI.pdb
 G:\Project\KDI\KDI\bin\KDI.dll.config
 G:\Project\KDI\KDI\bin\KDI.dll
 G:\Project\KDI\KDI\bin\KDI.pdb
@@ -59,5 +61,3 @@ G:\Project\KDI\KDI\bin\Microsoft.Owin.Security.Twitter.xml
 G:\Project\KDI\KDI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 G:\Project\KDI\KDI\bin\System.Web.Http.Owin.xml
 G:\Project\KDI\KDI\obj\Debug\KDI.csprojResolveAssemblyReference.cache
-G:\Project\KDI\KDI\obj\Debug\KDI.dll
-G:\Project\KDI\KDI\obj\Debug\KDI.pdb
