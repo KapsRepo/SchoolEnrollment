@@ -1,25 +1,32 @@
-﻿<div class="jumbotron">
-    <h1>Secondary School Enrollment by County - Visualization </h1>
-    <p class="lead"></p>
-    <p><a href=@Url.Content("~/SchoolEnrollment") class="btn btn-primary btn-lg">Click to View Chart</a></p>
-</div>
-<div class="row">
-    <div class="col-md-4">
-        <h2>Intended Users</h2>
-        <ul>
-            <li>National Level Management- To check for trends between different counties</li>
-            <li>County Level Management- To check for Enrollment trends within the county over a period of time</li>
-        </ul>
-        @*<p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>*@
+﻿<style type="text/css">
+    .sizeText {
+        font-size: 15px
+    }
+</style>
+<div class="container">
+    <div class="jumbotron">
+        <h2>Secondary School Enrollment by County - Visualization </h2>
+        <p class="lead"></p>
+        <p><a href=@Url.Content("~/SchoolEnrollment") class="btn btn-primary btn-lg">Click to View Chart</a></p>
     </div>
-    <div class="col-md-4">
-        <h2>Top 10 Tabulated County Data </h2>
-        <p>The tabulated data of the top 10 counties by enrollment can be found by clicking on the button below</p>
-        <p><a href=@Url.Content("~/SchoolEnrollment/Table") class="btn btn-primary btn-sm">Table &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Official Data source</h2>
-        <p>The official data source from the Kenya Data Initiative on all the 47 counties can be found here</p>
-        <p><a class="btn btn-default btn-sm" href="https://data.hdx.rwlabs.org/dataset/number-of-secondary-school-enrolment-by-county-2007-2013">Official &raquo;</a></p>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Intended Users</h3>
+            <ul>
+                <li class="sizeText"><strong>National Level Management</strong>- To check for trends between different counties</li>
+                <li class="sizeText"><strong>County Level Management</strong>- To check for Enrollment trends within the county over a period of time</li>
+            </ul>
+            @*<p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>*@
+        </div>
+        <div class="col-md-4">
+            <h3>Top 10 Counties Tabulated  Data </h3>
+            <p class="sizeText">The tabulated data of the top 10 counties by enrollment can be found by clicking on the button below</p>
+            <p><a href=@Url.Content("~/SchoolEnrollment/Table") class="btn btn-primary btn-sm">Table &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h3>Official Data source</h3>
+            <p class="sizeText">The official data source from the Kenya Data Initiative on all the 47 counties can be found here</p>
+            <p><a class="btn btn-primary btn-sm" href="https://data.hdx.rwlabs.org/dataset/number-of-secondary-school-enrolment-by-county-2007-2013">Official &raquo;</a></p>
+        </div>
     </div>
 </div>

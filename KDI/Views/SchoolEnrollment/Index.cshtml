@@ -1,7 +1,15 @@
-﻿<div class="container">
-
-<div class="row">
-    <h1>School Enrollment for Counties (2007-2013) Top 10 Counties- Visualization </h1>
+﻿<div id="chartContainer" class="container">
+    
+    <div class="row">
+        <div class="col-md-1">
+            <p><a href=@Url.Content("~/Home/Index") class="btn btn-primary btn-sm">Home</a></p>
+        </div>
+        <div class="col-md-1">
+            <p><a href=@Url.Content("~/SchoolEnrollment/Table") class="btn btn-primary btn-sm">Table</a></p>
+        </div>
+     </div>
+    <div class="row">
+    <h2> Top 10 Counties Secondary School Enrollment - (2007-2013)</h2>
 </div>
     <script>
         debugger;
@@ -27,11 +35,11 @@
             .orient("left")
             .tickFormat(d3.format(".2s"));
        
-        var svg = d3.select("body")
+        var svg = d3.select("#chartContainer")
             .append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
-          .append("g")
+            .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
         d3.csv("../../Data/SchoolEnrollmentTwo.csv", function (error, data) {
@@ -60,12 +68,12 @@
                 svg.append("g")
                     .attr("class", "y axis")
                     .call(yAxis)
-                  .append("text")
+                    .append("text")
                     .attr("transform", "rotate(-90)")
                     .attr("y", 6)
                     .attr("dy", ".71em")
                     .style("text-anchor", "end")
-                    .text("Population");
+                    .text("Enrollment");
 
                 var state = svg.selectAll(".county")
                     .data(data)
@@ -75,7 +83,7 @@
 
                 state.selectAll("rect")
                     .data(function (d) { return d.ages; })
-                  .enter().append("rect")
+                    .enter().append("rect")
                     .attr("width", x.rangeBand())
                     .attr("y", function (d) { return y(d.y1); })
                     .attr("height", function (d) { return y(d.y0) - y(d.y1); })
@@ -104,4 +112,5 @@
 
         });
     </script>
+    
 </div>

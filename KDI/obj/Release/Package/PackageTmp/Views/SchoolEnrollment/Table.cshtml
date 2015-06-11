@@ -5,16 +5,20 @@
 
 
 <div class="container">
-    <h2>Top 10 County Secondary School Enrollment - (2007-2013)</h2>
+    
+    <div class="row">
+        <div class="col-md-1">
+            <p><a href=@Url.Content("~/Home/Index") class="btn btn-primary btn-sm">Home</a></p>
+        </div>
+        <div class="col-md-1">
+            <p><a href=@Url.Content("~/SchoolEnrollment/Index") class="btn btn-primary btn-sm">Chart</a></p>
+        </div>
+    </div>
+
+    <h2>Top 10 Counties Secondary School Enrollment - (2007-2013)</h2>
     <div id="CSVTable"></div>
-</div>
 
-<div class="row">
-   
-    <p><a href=@Url.Content("~/Home/Index") class="btn btn-primary btn-sm">Home</a></p>
-    <p><a href=@Url.Content("~/SchoolEnrollment/Index") class="btn btn-primary btn-sm">Chart</a></p>
 </div>
-
 <script>
     $(function () {
         debugger;
